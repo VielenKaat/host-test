@@ -34,5 +34,6 @@ class DigitalClock {
 
 const clockElement = document.querySelector(".clock");
 const clockObject = new DigitalClock(clockElement)
-
+const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+console.log(isLocalhost)
 clockObject.start()
